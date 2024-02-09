@@ -57,4 +57,32 @@ links[7] = "https://www.imdb.com/title/tt0050083/?ref_=adv_li_tt";
 links[8] = "https://www.imdb.com/title/tt1375666/?ref_=adv_li_tt";
 links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 
+window.onload = function() {
 
+      const tableBody = document.getElementsByTagName("tbody")[0];
+
+      for(let i = 0; i < summaries.length; i++){
+
+            const tableRow = document.createElement("tr");
+            tableBody.appendChild(tableRow);
+
+            for(let j=0; j < 1; j++){
+
+                  const tableData1 = document.createElement("td");
+                  tableRow.appendChild(tableData1);
+                  const tableLinks = document.createElement("a");
+                  tableData1.appendChild(tableLinks);
+                  tableLinks.innerHTML=titles[i];
+                  tableLinks.href=links[i];
+
+                  const tableData2 = document.createElement("td");
+                  tableRow.appendChild(tableData2);
+                  tableData2.innerHTML=summaries[i];
+
+                  const tableData3 = document.createElement("td");
+                  tableRow.appendChild(tableData3);
+                  tableData3.innerHTML=ratings[i];
+
+            }
+      }
+}
