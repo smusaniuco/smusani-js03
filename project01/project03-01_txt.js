@@ -26,9 +26,6 @@ function updateTotal() {
      document.getElementById('billTotal').innerHTML = formatCurrency(orderTotal);
 }
 
-
-
- // Function to display a numeric value as a text string in the format $##.## 
  function formatCurrency(value) {
     return "$" + value.toFixed(2);
  }
