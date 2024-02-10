@@ -3,8 +3,8 @@
       Project 03-02
 
       Application to generate a slide gallery
-      Author: 
-      Date:   
+      Author: Shyam Prasad Reddy Musani
+      Date:   2/9/2024
 
       Filename: project03-02.js
 */

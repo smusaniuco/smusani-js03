@@ -3,8 +3,8 @@
       Project 03-03
 
       Application to generate a movie list
-      Author: 
-      Date:   
+      Author: Shyam Prasad Reddy Musani
+      Date:   2/9/2024
 
       Filename: project03-03.js
 */
@@ -60,8 +60,9 @@ links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 window.onload = function() {
 
       const tableBody = document.getElementsByTagName("tbody")[0];
+      let k=0;
 
-      for(let i = 0; i < summaries.length; i++){
+      while(k<links.length){
 
             const tableRow = document.createElement("tr");
             tableBody.appendChild(tableRow);
@@ -72,17 +73,18 @@ window.onload = function() {
                   tableRow.appendChild(tableData1);
                   const tableLinks = document.createElement("a");
                   tableData1.appendChild(tableLinks);
-                  tableLinks.innerHTML=titles[i];
-                  tableLinks.href=links[i];
+                  tableLinks.innerHTML=titles[k];
+                  tableLinks.href=links[k];
 
                   const tableData2 = document.createElement("td");
                   tableRow.appendChild(tableData2);
-                  tableData2.innerHTML=summaries[i];
+                  tableData2.innerHTML=summaries[k];
 
                   const tableData3 = document.createElement("td");
                   tableRow.appendChild(tableData3);
-                  tableData3.innerHTML=ratings[i];
+                  tableData3.innerHTML=ratings[k];
 
             }
+            k++;
       }
 }

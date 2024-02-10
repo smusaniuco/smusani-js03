@@ -4,8 +4,8 @@
 
       Tipton Turbines
       Baseball Schedule Data
-      Author: 
-      Date:   
+      Author: Shyam Prasad Reddy Musani
+      Date:   2/9/2024
 
       Filename: schedule.js
 */

@@ -39,27 +39,22 @@ function quote() {
    
    if(chicken_call){
          total_cost = total_cost + chicken_item;
-         temp_tax = total_cost*tax;
    }
 
    if(halibut_call){
          total_cost = total_cost + halibut_item;
-         temp_tax = total_cost*tax;
    }
 
    if(hamburger_call){
          total_cost = total_cost + hamburger_item;
-         temp_tax = total_cost*tax;
    }
 
    if(salmon_call){
          total_cost = total_cost + salmon_item;
-         temp_tax = total_cost *tax;
    }
 
    if(salad_call){
          total_cost = total_cost + salad_item;
-         temp_tax = total_cost*tax;
    }
 document.getElementById('billTotal').innerHTML = formatCurrency(total_cost);
 
