@@ -3,8 +3,8 @@
       Project 03-01
       
       Application to calculate total order total_cost
-      Author: 
-      Date:   
+      Author: Shyam Prasad Reddy Musani
+      Date: 2/09/2024
       
       Filename: project03-01.js
 */    
